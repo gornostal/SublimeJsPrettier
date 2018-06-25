@@ -516,6 +516,9 @@ class JsPrettierCommand(sublime_plugin.TextCommand):
                     prettier_options.append('graphql')
                     continue
 
+                prettier_options.append(cli_option_name)
+                prettier_options.append('babylon')
+
                 # if self.is_html(view) and not self.is_source_js(view):
                 #     prettier_options.append(cli_option_name)
                 #     prettier_options.append('parse5')
